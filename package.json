@@ -1,0 +1,16 @@
+{
+  "name": "mastering_typescript_todo",
+  "version": "1.0.0",
+  "description": "Compile the code with watch ``` tsc -w ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
