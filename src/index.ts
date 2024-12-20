@@ -1,5 +1,6 @@
-function printDouble(msg: string) {
-    console.log(`${msg} ${msg}`);
-}
+const btn = document.getElementById("btn");
+console.log(btn);
 
-printDouble('Hello, World!'); // Hello, World! Hello, World!
+btn?.addEventListener("click", function() {
+    console.log("Button clicked");
+});
