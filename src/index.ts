@@ -1,9 +1,16 @@
-const btn = document.getElementById("btn");
-const input = document.getElementById("todoinput") as HTMLInputElement;
-console.log(btn);
+const btn = document.getElementById("btn")!;
+const input = document.getElementById("todoinput")! as HTMLInputElement;
+const form = document.querySelector("#todoform")! as HTMLFormElement;
 
-btn?.addEventListener("click", function() {
-    console.log(input.value);
-    input.value = "";
-    // console.log("Button clicked");
-});
+function handleSubmit(e: SubmitEvent) {
+    e.preventDefault();
+    console.log("SUBMITTED!");
+}
+
+form.addEventListener("submit", handleSubmit);
+
+// btn?.addEventListener("click", function() {
+//     console.log(input.value);
+//     input.value = "";
+//     // console.log("Button clicked");
+// });
